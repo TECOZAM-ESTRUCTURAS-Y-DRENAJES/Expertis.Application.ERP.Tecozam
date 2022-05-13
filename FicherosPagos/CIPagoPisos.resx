@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Grid_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="IDProveedor"&gt;&lt;Caption&gt;Proveedor&lt;/Caption&gt;&lt;DataMember&gt;IDProveedor&lt;/DataMember&gt;&lt;Key&gt;IDProveedor&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="DescProveedor"&gt;&lt;Caption&gt;DescProveedor&lt;/Caption&gt;&lt;DataMember&gt;DescProveedor&lt;/DataMember&gt;&lt;Key&gt;DescProveedor&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="CifProveedor"&gt;&lt;Caption&gt;CifProveedor&lt;/Caption&gt;&lt;DataMember&gt;CifProveedor&lt;/DataMember&gt;&lt;Key&gt;CifProveedor&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;/Column2&gt;&lt;Column3 ID="Direccion"&gt;&lt;Caption&gt;Direccion&lt;/Caption&gt;&lt;DataMember&gt;Direccion&lt;/DataMember&gt;&lt;Key&gt;Direccion&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="CodPostal"&gt;&lt;Caption&gt;CodPostal&lt;/Caption&gt;&lt;DataMember&gt;CodPostal&lt;/DataMember&gt;&lt;Key&gt;CodPostal&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;/Column4&gt;&lt;Column5 ID="Poblacion"&gt;&lt;Caption&gt;Poblacion&lt;/Caption&gt;&lt;DataMember&gt;Poblacion&lt;/DataMember&gt;&lt;Key&gt;Poblacion&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;/Column5&gt;&lt;Column6 ID="Provincia"&gt;&lt;Caption&gt;Provincia&lt;/Caption&gt;&lt;DataMember&gt;Provincia&lt;/DataMember&gt;&lt;Key&gt;Provincia&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;/Column6&gt;&lt;Column7 ID="Fianza"&gt;&lt;Caption&gt;Fianza&lt;/Caption&gt;&lt;DataMember&gt;Fianza&lt;/DataMember&gt;&lt;Key&gt;Fianza&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;/Column7&gt;&lt;Column8 ID="Renta"&gt;&lt;Caption&gt;Renta&lt;/Caption&gt;&lt;DataMember&gt;Renta&lt;/DataMember&gt;&lt;Key&gt;Renta&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;/Column8&gt;&lt;Column9 ID="IVA"&gt;&lt;Caption&gt;IVA&lt;/Caption&gt;&lt;DataMember&gt;IVA&lt;/DataMember&gt;&lt;Key&gt;IVA&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;/Column9&gt;&lt;Column10 ID="Retencion"&gt;&lt;Caption&gt;Retencion&lt;/Caption&gt;&lt;DataMember&gt;Retencion&lt;/DataMember&gt;&lt;Key&gt;Retencion&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;/Column10&gt;&lt;Column11 ID="Luz"&gt;&lt;Caption&gt;Luz&lt;/Caption&gt;&lt;DataMember&gt;Luz&lt;/DataMember&gt;&lt;Key&gt;Luz&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;/Column11&gt;&lt;Column12 ID="Agua"&gt;&lt;Caption&gt;Agua&lt;/Caption&gt;&lt;DataMember&gt;Agua&lt;/DataMember&gt;&lt;Key&gt;Agua&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;/Column12&gt;&lt;Column13 ID="Gas"&gt;&lt;Caption&gt;Gas&lt;/Caption&gt;&lt;DataMember&gt;Gas&lt;/DataMember&gt;&lt;Key&gt;Gas&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;/Column13&gt;&lt;Column14 ID="Varios"&gt;&lt;Caption&gt;Varios&lt;/Caption&gt;&lt;DataMember&gt;Varios&lt;/DataMember&gt;&lt;Key&gt;Varios&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;/Column14&gt;&lt;Column15 ID="TotalAlquiler"&gt;&lt;Caption&gt;TotalAlquiler&lt;/Caption&gt;&lt;DataMember&gt;TotalAlquiler&lt;/DataMember&gt;&lt;Key&gt;TotalAlquiler&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;/Column15&gt;&lt;Column16 ID="TotalGastos"&gt;&lt;Caption&gt;TotalGastos&lt;/Caption&gt;&lt;DataMember&gt;TotalGastos&lt;/DataMember&gt;&lt;Key&gt;TotalGastos&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;/Column16&gt;&lt;Column17 ID="TotalPagar"&gt;&lt;Caption&gt;TotalPagar&lt;/Caption&gt;&lt;DataMember&gt;TotalPagar&lt;/DataMember&gt;&lt;Key&gt;TotalPagar&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;/Column17&gt;&lt;Column18 ID="Piso"&gt;&lt;Caption&gt;Piso&lt;/Caption&gt;&lt;DataMember&gt;Piso&lt;/DataMember&gt;&lt;Key&gt;Piso&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;/Column18&gt;&lt;Column19 ID="IDBancoPago"&gt;&lt;Caption&gt;IDBancoPago&lt;/Caption&gt;&lt;DataMember&gt;IDBancoPago&lt;/DataMember&gt;&lt;Key&gt;IDBancoPago&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;/Column19&gt;&lt;Column20 ID="SucursalPago"&gt;&lt;Caption&gt;SucursalPago&lt;/Caption&gt;&lt;DataMember&gt;SucursalPago&lt;/DataMember&gt;&lt;Key&gt;SucursalPago&lt;/Key&gt;&lt;Position&gt;20&lt;/Position&gt;&lt;/Column20&gt;&lt;Column21 ID="DigitoControlPago"&gt;&lt;Caption&gt;DigitoControlPago&lt;/Caption&gt;&lt;DataMember&gt;DigitoControlPago&lt;/DataMember&gt;&lt;Key&gt;DigitoControlPago&lt;/Key&gt;&lt;Position&gt;21&lt;/Position&gt;&lt;/Column21&gt;&lt;Column22 ID="NCuentaPago"&gt;&lt;Caption&gt;NCuentaPago&lt;/Caption&gt;&lt;DataMember&gt;NCuentaPago&lt;/DataMember&gt;&lt;Key&gt;NCuentaPago&lt;/Key&gt;&lt;Position&gt;22&lt;/Position&gt;&lt;/Column22&gt;&lt;Column23 ID="DescBanco"&gt;&lt;Caption&gt;DescBanco&lt;/Caption&gt;&lt;DataMember&gt;DescBanco&lt;/DataMember&gt;&lt;Key&gt;DescBanco&lt;/Key&gt;&lt;Position&gt;23&lt;/Position&gt;&lt;/Column23&gt;&lt;Column24 ID="Sucursal"&gt;&lt;Caption&gt;Sucursal&lt;/Caption&gt;&lt;DataMember&gt;Sucursal&lt;/DataMember&gt;&lt;Key&gt;Sucursal&lt;/Key&gt;&lt;Position&gt;24&lt;/Position&gt;&lt;/Column24&gt;&lt;Column25 ID="IDBanco"&gt;&lt;Caption&gt;IDBanco&lt;/Caption&gt;&lt;DataMember&gt;IDBanco&lt;/DataMember&gt;&lt;Key&gt;IDBanco&lt;/Key&gt;&lt;Position&gt;25&lt;/Position&gt;&lt;/Column25&gt;&lt;Column26 ID="NCuenta"&gt;&lt;Caption&gt;NCuenta&lt;/Caption&gt;&lt;DataMember&gt;NCuenta&lt;/DataMember&gt;&lt;Key&gt;NCuenta&lt;/Key&gt;&lt;Position&gt;26&lt;/Position&gt;&lt;/Column26&gt;&lt;Column27 ID="DigitoControl"&gt;&lt;Caption&gt;DigitoControl&lt;/Caption&gt;&lt;DataMember&gt;DigitoControl&lt;/DataMember&gt;&lt;Key&gt;DigitoControl&lt;/Key&gt;&lt;Position&gt;27&lt;/Position&gt;&lt;/Column27&gt;&lt;Column28 ID="IDBancoPropio"&gt;&lt;Caption&gt;IDBancoPropio&lt;/Caption&gt;&lt;DataMember&gt;IDBancoPropio&lt;/DataMember&gt;&lt;Key&gt;IDBancoPropio&lt;/Key&gt;&lt;Position&gt;28&lt;/Position&gt;&lt;/Column28&gt;&lt;Column29 ID="DescBancoPropio"&gt;&lt;Caption&gt;DescBancoPropio&lt;/Caption&gt;&lt;DataMember&gt;DescBancoPropio&lt;/DataMember&gt;&lt;Key&gt;DescBancoPropio&lt;/Key&gt;&lt;Position&gt;29&lt;/Position&gt;&lt;/Column29&gt;&lt;Column30 ID="DireccionPiso"&gt;&lt;Caption&gt;DireccionPiso&lt;/Caption&gt;&lt;DataMember&gt;DireccionPiso&lt;/DataMember&gt;&lt;Key&gt;DireccionPiso&lt;/Key&gt;&lt;Position&gt;30&lt;/Position&gt;&lt;/Column30&gt;&lt;Column31 ID="Predeterminado"&gt;&lt;Caption&gt;Predeterminado&lt;/Caption&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Predeterminado&lt;/DataMember&gt;&lt;Key&gt;Predeterminado&lt;/Key&gt;&lt;Position&gt;31&lt;/Position&gt;&lt;/Column31&gt;&lt;Column32 ID="CodigoIBAN"&gt;&lt;Caption&gt;CodigoIBAN&lt;/Caption&gt;&lt;DataMember&gt;CodigoIBAN&lt;/DataMember&gt;&lt;Key&gt;CodigoIBAN&lt;/Key&gt;&lt;Position&gt;32&lt;/Position&gt;&lt;/Column32&gt;&lt;Column33 ID="IDProveedorBanco"&gt;&lt;Caption&gt;IDProveedorBanco&lt;/Caption&gt;&lt;DataMember&gt;IDProveedorBanco&lt;/DataMember&gt;&lt;Key&gt;IDProveedorBanco&lt;/Key&gt;&lt;Position&gt;33&lt;/Position&gt;&lt;/Column33&gt;&lt;Column34 ID="Swift"&gt;&lt;Caption&gt;Swift&lt;/Caption&gt;&lt;DataMember&gt;Swift&lt;/DataMember&gt;&lt;Key&gt;Swift&lt;/Key&gt;&lt;Position&gt;34&lt;/Position&gt;&lt;/Column34&gt;&lt;Column35 ID="Telefono"&gt;&lt;Caption&gt;Telefono&lt;/Caption&gt;&lt;DataMember&gt;Telefono&lt;/DataMember&gt;&lt;Key&gt;Telefono&lt;/Key&gt;&lt;Position&gt;35&lt;/Position&gt;&lt;/Column35&gt;&lt;Column36 ID="Fax"&gt;&lt;Caption&gt;Fax&lt;/Caption&gt;&lt;DataMember&gt;Fax&lt;/DataMember&gt;&lt;Key&gt;Fax&lt;/Key&gt;&lt;Position&gt;36&lt;/Position&gt;&lt;/Column36&gt;&lt;Column37 ID="Transferencia"&gt;&lt;Caption&gt;Transferencia&lt;/Caption&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Transferencia&lt;/DataMember&gt;&lt;Key&gt;Transferencia&lt;/Key&gt;&lt;Position&gt;37&lt;/Position&gt;&lt;/Column37&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="UiCommandManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="SaveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>192, 17</value>
+  </metadata>
+</root>
