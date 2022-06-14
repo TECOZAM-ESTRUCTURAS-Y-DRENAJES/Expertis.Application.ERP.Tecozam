@@ -16,7 +16,7 @@
         With e.Filter
             If AdvOperario.Text <> "" Then .Add("IdOperario2", FilterOperator.Equal, AdvOperario.Text, FilterType.String)
             If AdvBancoTransf.Text <> "" Then .Add("IdBancoPropio", FilterOperator.Equal, AdvBancoTransf.Text, FilterType.String)
-            If CmbMes.Text <> "" Then .Add("Mes", FilterOperator.Equal, CmbMes.Value, FilterType.String)
+            If CmbMes.Text <> "" Then .Add("Mes", FilterOperator.Equal, CmbMes.Value, FilterType.Numeric)
             If CmbAño.Text <> "" Then .Add("Anyo", FilterOperator.Equal, CmbAño.Text, FilterType.String)
             If AdvObra.Text <> "" Then .Add("IdObraPredet", FilterOperator.Equal, AdvObra.Value, FilterType.Numeric)
             If AdvPais.Text <> "" Then .Add("idpais", FilterOperator.Equal, AdvPais.Value, FilterType.String)
