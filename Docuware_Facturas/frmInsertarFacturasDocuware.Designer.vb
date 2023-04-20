@@ -1,14 +1,17 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmFacturasDocuwareApp
+Partial Class frmInsertarFacturasDocuware
     Inherits Solmicro.Expertis.Engine.UI.GridMnto
 
-    'Form invalida a Dispose para limpiar la lista de componentes.
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        If disposing AndAlso components IsNot Nothing Then
-            components.Dispose()
-        End If
-        MyBase.Dispose(disposing)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
     End Sub
 
     'Requerido por el Diseñador de Windows Forms
@@ -20,7 +23,7 @@ Partial Class frmFacturasDocuwareApp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim Grid_DesignTimeLayout As Janus.Windows.GridEX.GridEXLayout = New Janus.Windows.GridEX.GridEXLayout
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFacturasDocuwareApp))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInsertarFacturasDocuware))
         CType(Me.UiCommandManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Toolbar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MenuBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -35,30 +38,32 @@ Partial Class frmFacturasDocuwareApp
         'MenuBar
         '
         Me.MenuBar.Location = New System.Drawing.Point(0, 28)
-        Me.MenuBar.Size = New System.Drawing.Size(758, 26)
+        Me.MenuBar.Size = New System.Drawing.Size(861, 26)
         '
         'MainPanel
         '
-        Me.MainPanel.Size = New System.Drawing.Size(510, 374)
+        Me.MainPanel.Size = New System.Drawing.Size(613, 321)
         '
         'Grid
         '
-        Me.Grid.AdvSearchColumns = New Solmicro.Expertis.Engine.UI.AdvSearchColumns(New Solmicro.Expertis.Engine.UI.AdvSearchColumn() {New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDArticulo", Nothing, "IDArticulo"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDProveedor", Nothing, "IDProveedor")})
         Me.Grid.DataSource = Nothing
         Grid_DesignTimeLayout.LayoutString = resources.GetString("Grid_DesignTimeLayout.LayoutString")
         Me.Grid.DesignTimeLayout = Grid_DesignTimeLayout
-        Me.Grid.EntityName = "ParteFacturaLineas"
-        Me.Grid.Size = New System.Drawing.Size(510, 374)
-        Me.Grid.ViewName = "vParteLineaFactura"
+        Me.Grid.EntityName = "FacturaDocuware"
+        Me.Grid.Size = New System.Drawing.Size(613, 321)
+        Me.Grid.ViewName = "vFacturasDocuware"
         '
-        'frmFacturasDocuwareApp
+        'frmInsertarFacturasDocuware
         '
-        Me.ClientSize = New System.Drawing.Size(758, 462)
-        Me.EntityName = "ParteFacturaLineas"
-        Me.Name = "frmFacturasDocuwareApp"
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(861, 409)
+        Me.CreateTransaction = True
+        Me.EntityName = "FacturaDocuware"
+        Me.Name = "frmInsertarFacturasDocuware"
         Me.NavigationFields = "IDLineaFactura"
-        Me.Text = "Añadir Facturas Docuware"
-        Me.ViewName = "vParteLineaFactura"
+        Me.Text = "Mnto Crear Facturas Proveedores Docuware"
+        Me.ViewName = "vFacturasDocuware"
         CType(Me.UiCommandManager1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Toolbar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MenuBar, System.ComponentModel.ISupportInitialize).EndInit()
@@ -67,5 +72,4 @@ Partial Class frmFacturasDocuwareApp
         Me.ResumeLayout(False)
 
     End Sub
-
 End Class
