@@ -149,7 +149,7 @@ Partial Class CIPagoAtrasos
         '
         Me.Label2.Location = New System.Drawing.Point(411, 15)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.Size = New System.Drawing.Size(34, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Total"
         '
@@ -157,7 +157,7 @@ Partial Class CIPagoAtrasos
         '
         Me.Label1.Location = New System.Drawing.Point(208, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 13)
+        Me.Label1.Size = New System.Drawing.Size(86, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Total Marcado"
         '
@@ -176,7 +176,7 @@ Partial Class CIPagoAtrasos
         '
         Me.LblBancoTransf.Location = New System.Drawing.Point(18, 52)
         Me.LblBancoTransf.Name = "LblBancoTransf"
-        Me.LblBancoTransf.Size = New System.Drawing.Size(82, 13)
+        Me.LblBancoTransf.Size = New System.Drawing.Size(81, 13)
         Me.LblBancoTransf.TabIndex = 6
         Me.LblBancoTransf.Text = "Banco Trans."
         '
