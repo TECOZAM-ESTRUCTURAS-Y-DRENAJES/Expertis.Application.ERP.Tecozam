@@ -73,6 +73,7 @@ Public Class CIInsertarFacturasDocuware
         CargaCombos()
         'Añado el metodo de traer y de cargar facturas
         LoadToolbarActions()
+        LoadGridActions()
 
         dtResultados.Columns.Add("FechaFactura", GetType(String))
         dtResultados.Columns.Add("NFactura", GetType(String))
@@ -121,7 +122,18 @@ Public Class CIInsertarFacturasDocuware
         dt.AcceptChanges()
         cbTransferida.DataSource = dt
     End Sub
-
+    Private Sub LoadGridActions()
+        With Grid
+            .Actions.Add("Abrir Factura", AddressOf AbrirFactura, ExpertisApp.GetIcon("documents.ico"))
+        End With
+    End Sub
+    Private Sub AbrirFactura()
+        With Grid
+            If Length(.Value("SuFactura")) > 0 Then
+                ExpertisApp.OpenForm("MFACC", New StringFilterItem("SuFactura", .Value("SuFactura")))
+            End If
+        End With
+    End Sub
     Private Sub LoadToolbarActions()
         Dim db As String
         db = ExpertisApp.DataBaseName.ToString()
