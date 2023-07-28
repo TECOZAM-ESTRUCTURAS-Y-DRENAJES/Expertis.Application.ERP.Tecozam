@@ -86,7 +86,7 @@
         dtEmpresas.Rows.Add(dr)
 
         dr = dtEmpresas.NewRow()
-        dr("Empresa") = "T. G.E"
+        dr("Empresa") = "T. G.E."
         dtEmpresas.Rows.Add(dr)
 
         cmbEmpresa.DataSource = dtEmpresas

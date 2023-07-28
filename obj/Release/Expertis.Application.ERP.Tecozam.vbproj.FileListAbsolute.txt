@@ -34,3 +34,22 @@ C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Ex
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.DetalleFacturaDocuware.resources
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIInsertarFacturasDocuware.resources
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIDiariosAnaliticos.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\ResolveAssemblyReference.cache
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIDiariosAnaliticos.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIInsertarFacturasDocuware.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.DetalleFacturaDocuware.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.frmContadorFacturasDocuware.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.frmInsertarFacturasDocuware.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIPagoAnticipos.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIPagoAtrasos.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIPagoLiquidaciones.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIPagoOperario.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIPagoPagaExtra.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIPagoPisos.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.FrmSeleccionarBanco.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.Resources.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.vbproj.GenerateResource.Cache
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.dll.licenses
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.dll
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.xml
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.pdb

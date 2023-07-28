@@ -247,7 +247,7 @@ Public Class CIInsertarFacturasDocuware
         f.Add("Transferida", FilterOperator.Equal, False)
         f.Add("BaseDeDatos", FilterOperator.Equal, FERRALLAS)
 
-        dt = New BE.DataEngine().Filter("xTecozam50R2Demo..tbFacturasDocuware", f, , "IDFacturaDocuware, IDTipoIva")
+        dt = New BE.DataEngine().Filter("xTecozam50R2..tbFacturasDocuware", f, , "IDFacturaDocuware, IDTipoIva")
 
         If dt.Rows.Count > 0 Then
             For Each dr As DataRow In dt.Rows
@@ -399,7 +399,7 @@ Public Class CIInsertarFacturasDocuware
         f.Add("Transferida", FilterOperator.Equal, False)
         f.Add("BaseDeDatos", FilterOperator.Equal, SECOZAM)
 
-        dt = New BE.DataEngine().Filter("xTecozam50R2Demo..tbFacturasDocuware", f, , "IDFacturaDocuware, IDTipoIva")
+        dt = New BE.DataEngine().Filter("xTecozam50R2..tbFacturasDocuware", f, , "IDFacturaDocuware, IDTipoIva")
 
         If dt.Rows.Count > 0 Then
             For Each dr As DataRow In dt.Rows
