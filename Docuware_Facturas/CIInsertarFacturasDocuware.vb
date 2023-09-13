@@ -669,7 +669,7 @@ Public Class CIInsertarFacturasDocuware
         dtCabecera.Rows(0)("ImpSinRepercutirB") = 0
         dtCabecera.Rows(0)("FacturaPagoPeriodicoSN") = 0
         dtCabecera.Rows(0)("NoDescontabilizar") = 0
-        'dtCabecera.Rows(0)("FechaParaDeclaracion") = 0
+        dtCabecera.Rows(0)("FechaParaDeclaracion") = dr("SuFechaFactura")
         dtCabecera.Rows(0)("FechaDeclaracionManual") = 0
         dtCabecera.Rows(0)("Exportado") = 0
         dtCabecera.Rows(0)("Exportar") = 1
