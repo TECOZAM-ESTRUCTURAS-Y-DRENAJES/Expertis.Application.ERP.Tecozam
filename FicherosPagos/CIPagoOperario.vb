@@ -1,4 +1,6 @@
-﻿Public Class CIPagoOperario
+﻿Imports System.IO
+
+Public Class CIPagoOperario
 
     Private Const CDLGFilterList As String = "Norma 34(*.XML)|*.XML|#" & _
                                   "Todos los archivos (*.*)|*.*"
@@ -145,7 +147,7 @@
         Dim T011 As String = ""
         Dim T012 As String = ""
         Dim T013 As String = ""
-        Dim T014 As String = ""
+        Dim T014 As Double = 0
         Dim T015 As String = ""
         Dim T016 As String = ""
         Dim T017 As String = ""
@@ -216,10 +218,12 @@
         Dim T082 As String = ""
 
         Dim dtPagos As DataTable = Grid.CheckedRecords
+        'Dim dtFichero As New DataTable("fichero")
         Dim dtFichero As New DataTable("fichero")
         Dim linea As New DataColumn("linea")
         dtFichero.Columns.Add(linea)
-        Dim drFichero As DataRow = dtFichero.NewRow
+
+
         Dim registro As String = ""
 
         If Not dtPagos Is Nothing Then
@@ -229,19 +233,28 @@
             End If
         End If
 
+        Dim drFichero As DataRow = dtFichero.NewRow()
+        registro = ",,,08,,,,,PAYROLL TECOZAM UK,,,,83060812800692,,,,,," & DateTime.Now.ToString("ddMMyyyy") & ",,,,,,,,,,,,,,,,,," & "PAYROLL " & dtPagos(0)("Mes").ToString & "-" & dtPagos(0)("Anyo").ToString & ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+        drFichero.Item("linea") = registro
+        dtFichero.Rows.Add(drFichero)
+
         For Each drPagos As DataRow In dtPagos.Rows
-            T001 = "07" 'identifica el codigo de la operacion
-            T005 = drPagos("Id Operario")
-            T013 = "GBP" 'moneda libras esterlinas
-            T014 = drPagos("Total") ' valor en libras
+
+            drFichero = dtFichero.NewRow()
+            T001 = "09" 'identifica el codigo de la operacion
+            'T005 = drPagos("IdOperario")
+            T013 = "GBP" 'moneda libras esterlina
+            T014 = drPagos("Total")
+            'T014 = drPagos("Total").ToString.Replace(",", ".") ' valor en libras
             T022 = "" 'codigo del banco
             T028 = "" ' numero de cuenta del beneficiario
-            T030 = drPagos("Nombre")
-            T034 = "PAYROLL " & drPagos("Mes") & "-" & drPagos("Año")
+            'T030 = drPagos("Nombre")
+            T030 = drPagos("DescOperario").ToString.Replace(",", ".")
+            T034 = "PAYROLL " & drPagos("Mes") & "-" & drPagos("Anyo")
             registro = H001 & "," & H002 & "," & H003 & "," & T001 & "," & T002 & "," & T003 & "," & T004 & "," & T005 & ","
             registro &= T006 & "," & T007 & "," & T008 & "," & T009 & "," & T010 & "," & T011 & "," & T012 & "," & T013 & ","
-            registro &= T014 & "," & T015 & "," & T016 & "," & T017 & "," & T018 & "," & T019 & "," & T020 & "," & T021 & ","
-            registro &= T022 & "," & T023 & "," & T024 & "," & T025 & "," & T026 & "," & T027 & "," & T028 & "," & T029 & ","
+            registro &= T014.ToString("0.00").Replace(",", ".") & "," & T015 & "," & T016 & "," & T017 & "," & T018 & "," & T019 & "," & T020 & "," & T021 & ","
+            registro &= drPagos("sortcode") & "," & T023 & "," & T024 & "," & T025 & "," & T026 & "," & T027 & "," & drPagos("accountnumber") & "," & T029 & ","
             registro &= T030 & "," & T031 & "," & T032 & "," & T033 & "," & T034 & "," & T035 & "," & T036 & "," & T037 & ","
             registro &= T038 & "," & T039 & "," & T040 & "," & T041 & "," & T042 & "," & T043 & "," & T044 & "," & T045 & ","
             registro &= T046 & "," & T047 & "," & T048 & "," & T049 & "," & T050 & "," & T051 & "," & T052 & "," & T053 & ","
@@ -255,10 +268,36 @@
             registro = ""
 
         Next
-        generarCSV(dtFichero)
+        'generarCSV(dtFichero)
+        guardarCSV(dtFichero)
+    End Sub
+    Public Sub guardarCSV(ByVal dtfichero As DataTable)
+        Dim saveFileDialog As New SaveFileDialog()
+
+        ' Configura el diálogo para archivos TXT
+        saveFileDialog.Filter = "Archivos de texto (*.txt)|*.txt"
+        saveFileDialog.Title = "Guardar Archivo como"
+
+        ' Abre el cuadro de diálogo para que el usuario seleccione la ubicación y el nombre del archivo
+        If saveFileDialog.ShowDialog() = DialogResult.OK Then
+            Try
+                Dim filePath As String = saveFileDialog.FileName
+
+                ' Escribe el contenido en el archivo
+                Using writer As New StreamWriter(filePath)
+                    For Each dr As DataRow In dtfichero.Rows
+                        writer.WriteLine(dr("linea").ToString())
+                    Next
+                End Using
+
+                ExpertisApp.GenerateMessage("Se ha guardado el archivo en la siguiente ruta " & filePath, MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Catch ex As Exception
+                ' Maneja cualquier error que pueda ocurrir durante la escritura del archivo
+                MessageBox.Show("Error al guardar el archivo: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
 
     End Sub
-
     Public Sub generarCSV(ByVal dtfichero As DataTable)
         SaveFileDialog2 = New SaveFileDialog
         SaveFileDialog2.Filter = "csv file|*.csv"
