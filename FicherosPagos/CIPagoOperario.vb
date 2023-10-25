@@ -261,7 +261,8 @@ Public Class CIPagoOperario
             registro &= T054 & "," & T055 & "," & T056 & "," & T057 & "," & T058 & "," & T059 & "," & T060 & "," & T061 & ","
             registro &= T062 & "," & T063 & "," & T064 & "," & T065 & "," & T066 & "," & T067 & "," & T068 & "," & T069 & ","
             registro &= T071 & "," & T072 & "," & T073 & "," & T074 & "," & T075 & "," & T076 & "," & T077 & "," & T078 & ","
-            registro &= T079 & "," & T080 & "," & T081 & "," & T082
+            'DVH 17/10/23 Añado una "," al final porque tiene una menos que en Expertis 4
+            registro &= T079 & "," & T080 & "," & T081 & "," & T082 & ","
 
             drFichero.Item("linea") = registro
             dtFichero.Rows.Add(drFichero)
