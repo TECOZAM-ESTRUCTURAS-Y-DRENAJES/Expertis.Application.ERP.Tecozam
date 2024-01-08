@@ -282,7 +282,10 @@ Public Class CIInsertarFacturasDocuware
 
         If dr("NObra").ToString.Length = 0 Then
             Dim CentroCoste As String
-            CentroCoste = GetCentroCoste(dr("IDArticulo"))
+            'David Velasco 08/01/2024
+            'Arreglar error IDEjercicio erroneo.
+            'CentroCoste = GetCentroCoste(dr("IDArticulo"))
+            CentroCoste = GetCentroCoste(dr("IDArticulo"), dr("SuFechaFactura"))
 
             If CentroCoste.ToString.Length = 0 Then
                 sql = "INSERT INTO tbFacturasDocuware (IDFacturaDocuware, IDLineaFactura,IDProveedor,IDArticulo,"
@@ -308,7 +311,7 @@ Public Class CIInsertarFacturasDocuware
         aux.EjecutarSql(sql)
     End Sub
 
-    Public Function GetCentroCoste(ByVal IDArticulo As String) As String
+    Public Function GetCentroCoste(ByVal IDArticulo As String, ByVal fechaFactura As String) As String
         Dim dtArt As New DataTable
         Dim fArt As New Filter
         Try
@@ -323,7 +326,7 @@ Public Class CIInsertarFacturasDocuware
             Dim dtPlanCont As New DataTable
             Dim fPlanCont As New Filter
             fPlanCont.Add("IDCContable", FilterOperator.Equal, dtFam.Rows(0)("CCCompra"))
-            fPlanCont.Add("IDEjercicio", FilterOperator.Equal, Year(Today))
+            fPlanCont.Add("IDEjercicio", FilterOperator.Equal, Year(fechaFactura))
 
             dtPlanCont = New BE.DataEngine().Filter("vfrmMntoPlanContableAnalitica", fPlanCont)
 
@@ -674,7 +677,7 @@ Public Class CIInsertarFacturasDocuware
         dtCabecera.Rows(0)("Exportado") = 0
         dtCabecera.Rows(0)("Exportar") = 1
         dtCabecera.Rows(0)("Enviar347") = 1
-        'dtCabecera.Rows(0)("IDObra") = 0
+        dtCabecera.Rows(0)("IDEjercicio") = Year(dr("SuFechaFactura"))
         dtCabecera.Rows(0)("ImpRetencionGar") = 0
         dtCabecera.Rows(0)("ImpRetencionGarA") = 0
         dtCabecera.Rows(0)("ImpRetencionGarB") = 0
