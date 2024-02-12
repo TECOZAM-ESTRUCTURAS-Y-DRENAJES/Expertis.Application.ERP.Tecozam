@@ -455,12 +455,6 @@ Public Class CIInsertarFacturasDocuware
         Dim dtLineas As New DataTable
         dtLineas = dt
 
-        'DAVID VELASCO 31/1/24
-        'CAMBIO PARA QUE CREE LAS FACTURAS ORDENADAS
-        dt.DefaultView.Sort = "IDFacturaDocuware ASC"
-        dt = dt.DefaultView.ToTable()
-        '---FIN CAMBIO
-
         Dim Propuesta As New ResultFacturacion
 
         If dt.Rows.Count > 0 Then
