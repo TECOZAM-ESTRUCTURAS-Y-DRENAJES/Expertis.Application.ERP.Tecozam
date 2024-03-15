@@ -56,3 +56,4 @@ C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.T
 C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.TextosBancosFV.resources
 C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.frmCrearAlbaranesTrazalMe.resources
 C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIAlbaranesVenta.resources
+C:\Users\dvelasco\Desktop\FuentesExpertis\Application\Expertis.Application.ERP.Tecozam\obj\Release\Expertis.Application.ERP.Tecozam.CIOrdenesDeServicio.resources
