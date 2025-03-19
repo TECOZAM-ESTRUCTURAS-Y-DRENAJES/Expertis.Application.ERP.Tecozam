@@ -18,6 +18,7 @@ Public Class frmCrearAlbaranesTrazalMe
     Dim rutaSalida = "\\stor01\DG\Comun\ALBARANES-TRAZALME\0. COMENZADOS\0. DESDE ALMACEN\"
     Dim rutaRetorno = "\\stor01\DG\Comun\ALBARANES-TRAZALME\0. COMENZADOS\1. DESDE OBRA\"
 
+
 #Region "CreaAlbaranesEnFicheros"
     Private Sub ProcesarFilasAlbaranes(ByVal dtAlbaranesSinCrear As DataTable)
         Dim ruta As String = ""
