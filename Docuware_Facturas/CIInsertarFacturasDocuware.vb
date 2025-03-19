@@ -776,7 +776,8 @@ Public Class CIInsertarFacturasDocuware
         Try
             frComLinea.Update(dtLinea)
         Catch ex As Exception
-            MsgBox(ex.ToString)
+            'MsgBox(ex.ToString)
+            Exit Sub
         End Try
 
         'Hago la analítica y base imponible de esta línea
@@ -954,7 +955,7 @@ Public Class CIInsertarFacturasDocuware
                 frComBaseImponible.Update(dtBaseImponible)
                 dtBaseImponible = Nothing
             Catch ex As Exception
-                MsgBox(ex.ToString)
+                'MsgBox(ex.ToString)
             End Try
         Else
             'Recupero según el ID de tbFacturaCompraBaseImponible y sumo según el ID y actualizo.
@@ -1365,34 +1366,41 @@ Public Class CIInsertarFacturasDocuware
         Return total
     End Function
 
+    'Public Function getIvaLinea(ByVal dr As DataRow) As Double
+    '    Dim iva As Double
+
+    '    Select Case dr("IDTipoIVA")
+    '        Case "00"
+    '            iva = 0
+    '        Case "01"
+    '            iva = 16
+    '        Case "02"
+    '            iva = 7
+    '        Case "03"
+    '            iva = 4
+    '        Case "06"
+    '            iva = 18
+    '        Case "07"
+    '            iva = 8
+    '        Case "10"
+    '            iva = 10
+    '        Case "12"
+    '            iva = 12
+    '        Case "21"
+    '            iva = 21
+    '        Case Else
+    '            iva = 0
+    '    End Select
+
+    '    Return dr("Precio") * iva / 100
+    '    'IDCondicionPago = dtFra.Rows(0)("IDCondicionPago").ToString
+    'End Function
     Public Function getIvaLinea(ByVal dr As DataRow) As Double
-        Dim iva As Double
+        Dim f As New Filter
+        f.Add("IDTipoIva", FilterOperator.Equal, dr("IDTipoIva"))
+        Dim dt As DataTable = New BE.DataEngine().Filter("tbMaestroTipoIva", f)
 
-        Select Case dr("IDTipoIVA")
-            Case "00"
-                iva = 0
-            Case "01"
-                iva = 16
-            Case "02"
-                iva = 7
-            Case "03"
-                iva = 4
-            Case "06"
-                iva = 18
-            Case "07"
-                iva = 8
-            Case "10"
-                iva = 10
-            Case "12"
-                iva = 12
-            Case "21"
-                iva = 21
-            Case Else
-                iva = 0
-        End Select
-
-        Return dr("Precio") * iva / 100
-        'IDCondicionPago = dtFra.Rows(0)("IDCondicionPago").ToString
+        Return dr("Precio") * dt.Rows(0)("Factor") / 100
     End Function
 
     Public Sub actualizaCabecera()
